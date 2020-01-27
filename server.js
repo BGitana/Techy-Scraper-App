@@ -22,6 +22,7 @@ app.use(express.static(__dirname + "/public"));
 app.engine("handlebars",expressHandlebars({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
+
 // Have every request got trough our router middleware
 app.use(router);
 
