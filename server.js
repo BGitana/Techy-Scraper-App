@@ -21,6 +21,9 @@ const PORT = process.env.PORT || 8080;
 // set up an Express Router
 var router = express.Router();
 
+// Require our routes file pass oir router object
+require("./config/routes")(router);
+
 // Designate our public folder as a static directory
 app.use(express.static(__dirname + "/public"));
 
