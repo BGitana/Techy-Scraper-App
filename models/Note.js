@@ -11,6 +11,20 @@ let noteSchema = new Schema({
         type: String,
         require: true,
     },
+
+
+// //////////////////demo/////////////////
+
+    _headlineId: {
+        type: Schema.Types.ObjectId,
+        ref: "Headline"
+    },
+    date: String,
+    noteText: String
+
+//////////////////demo/////////////////
+
+
 })
 
 let Note = mongoose.model("Note", noteSchema);
