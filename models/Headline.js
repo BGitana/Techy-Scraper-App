@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-let HeadlineSchema = new Schema({
+let headlineSchema = new Schema({
 
     title: {
         type: String,
@@ -34,6 +34,6 @@ let HeadlineSchema = new Schema({
     }
 });
 
-let Headline = mongoose.model("Headline", HeadlineSchema)
+let Headline = mongoose.model("Headline", headlineSchema)
 
 module.exports = Headline;
